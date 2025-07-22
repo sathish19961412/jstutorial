@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Js Statements</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+       <h2>Javascript Statements</h2>
+       <p id="demo"> 5+10 = ? </p>
+       <button type="button" ondblclick="Click()"> Double Click </button>
+       <script>
+        function Click()
+        {
+          let x,y,z; //Declare to variable x,y,z
+          x=5; //initialize to x
+          y=10; //initialize to y
+          z=x+y //Operation to the x and y in store to the z
+          document.getElementById('demo').innerHTML=z;
+        }
+       </script>
+    </body>
+</html>

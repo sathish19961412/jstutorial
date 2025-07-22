@@ -7,5 +7,45 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
+        <h2>My First Web Page</h2>
+        <p>My First Paragraph</p>
+        <p id="demo">World! Hello</p>
+        <button type="button" onclick="Print()">Click</button>
+        <script>
+            function Change()
+            {
+                document.getElementById('demo').innerHTML="<h3>Hello World!</h3>";
+            }
+
+            function Change1()
+            {
+                document.getElementById('demo').innerText="Hello World!";
+            }
+
+            function Add()
+            {
+                document.write(5+7);
+            }
+
+            function Walert()
+            {
+                let x=5;
+                let y=8;
+                let z=x+y;
+                window.alert(z);
+            }
+
+            function Cal()
+            {
+                let x=6;
+                let y=12
+                let z=x+y/100;
+                console.log(z);
+            }
+             function Print()
+            {
+                window.print()
+            }
+        </script>
     </body>
 </html>
