@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Js let variables</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+       <h3>Redeclaring Variables var,let keyword</h3>
+       <p id="demo">Values : ??</p>
+       <input type="button" onclick="Let()" value="Change"/>
+       <script>
+          function Var(){
+            var x=10;
+
+            {
+                var x=2;
+            }
+
+            document.getElementById('demo').innerHTML=x;
+          }
+       </script>
+        <script>
+          function Let(){
+            let x=10;
+
+            {
+                let x=2;
+            }
+            
+            {
+                let x=8;
+            }
+
+            document.getElementById('demo').innerHTML=x;
+          }
+       </script>
+    </body>
+</html>
