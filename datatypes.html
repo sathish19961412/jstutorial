@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Js in Datatypes</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+             
+        <h2>JavaScript has 8 Datatypes</h2>
+
+        <p>
+            String,Number,Bigint,Boolean,Undefined,Null,Symbol,Object
+        </p>
+        <script>
+            let x='sathish';
+            let y='33'
+            console.log(typeof(y));
+        </script>
+        <script>
+            let x1=11;
+            let y1=44;
+            console.log(typeof(y1));
+        </script>
+         <script>
+            let x2=BigInt(111111111113333333354677777777777777777777777777777);
+            console.log(typeof(x2));
+        </script>
+        <script>
+            let x3=5;
+            let y3=10;
+            let res=(x3==y3)
+            console.log(typeof(res));
+        </script>
+        <script>
+            let cars=['Volvo','Bmw','Saab'];
+            console.log(typeof(cars));
+        </script>
+        <script>
+            let users={
+                name:'sathish',
+                age:28,
+                Bloodgroup:'AB+'
+            }
+            console.log(typeof(users));
+        </script>
+        <script>
+            let car;
+            console.log(typeof(car));
+        </script>
+        <script>
+            let car_price=null;
+            console.log(typeof(car_price));
+        </script>
+    </body>
+</html>
