@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Js Objects</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>JavaScript Objects</h1>
+        <h2>Creating an Object</h2>
+        <p id="demo"></p>
+       <script>
+        //Create an object
+          const car={
+                type:"BMW",
+                model:"2025",
+                color:"Sliver",
+                fullName :function()
+                {
+                    return this.type + " " + this.model;
+                }
+          };
+           //Copy Of Object x
+           const x =car;
+           x.model="2021";
+          //Display Data from the Object
+          document.getElementById("demo").innerHTML="The Car Type is "+ car.type + " and car Model is " + car.model + " Finally Car Color is " + car.color;
+       </script>
+       <script>
+
+          //Create an Object
+          const person1={};
+
+          //Create an Object is new Object() Method 
+          const person= new Object();
+
+          //Add Properties
+          person.firstname="sathish";
+          person.lastname="pushparaj";
+          person.age=27;
+          person.eyecolor="black";
+          
+          //Display Data from the Object
+
+          document.getElementById("demo").innerHTML=car.fullName();
+       </script>
+    </body>
+</html>
